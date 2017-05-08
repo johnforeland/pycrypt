@@ -9,7 +9,7 @@ args = None
 if platform != 'win32':
     args = ['-O3']
     if 'TRAVIS' not in environ:
-        args.append('-march=native')
+        args.append('')
 
 try:
     from Cython.Build import cythonize
